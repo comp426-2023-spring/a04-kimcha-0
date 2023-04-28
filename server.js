@@ -34,7 +34,7 @@ app.get('/app/rps/play/', (req, res) => {
   res.send(rps(req.query.shot));
 });
 
-app.get('/app/rps/play/', (req, res) => {
+app.post('/app/rps/play/', (req, res) => {
   res.status(200);
   res.send(rps(req.body.shot));
 });
@@ -49,7 +49,7 @@ app.get('/app/rpsls/play/', (req, res) => {
   res.send(rpsls(req.query.shot));
 });
 
-app.get('/app/rpsls/play/', (req, res) => {
+app.post('/app/rpsls/play/', (req, res) => {
   res.status(200);
   res.send(rpsls(req.body.shot));
 });
