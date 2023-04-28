@@ -8,4 +8,15 @@ const args = minimist(process.argv.slice(2));
 const port = args.port || 5000;
 const app = express();
 
+app.use(express.urelencoded({extended: true}));
+app.use(express.json());
 app.listen(port, () => console.log('Listening on port ${port}'));
+
+
+//endpoints
+app.get('/app/', (req, res) => {
+  res.status(200);
+  res.send("200 OK");
+});
+
+
