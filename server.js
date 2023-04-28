@@ -1,3 +1,3 @@
-import { rps } from "../a03-kimcha-0/lib/rpsls.js";
+import { rps, rpsls } from "../a03-kimcha-0/lib/rpsls.js";
 
 
