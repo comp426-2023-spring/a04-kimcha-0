@@ -1,9 +1,11 @@
 import { rps, rpsls } from "../a03-kimcha-0/lib/rpsls.js";
+import minimist from 'minimist';
+import express from 'express';
 
-let express = require('express');
 
-let app = express();
+const args = minimist(process.argv.slice(2));
+const port = args.port || 5000;
+const app = express();
 
-const port = process.env.PORT || 5000;
 app.listen(port, () => console.log('Listening on port ${port}'));
 
