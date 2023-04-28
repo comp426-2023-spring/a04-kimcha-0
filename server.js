@@ -19,4 +19,14 @@ app.get('/app/', (req, res) => {
   res.send("200 OK");
 });
 
+app.get('/app/rps/', (req, res) => {
+  res.status(200);
+  res.send(rps());
+});
+
+app.get('app/rpsls/', (req, res) => {
+  res.status(200);
+  res.send(rpsls());
+});
+
 
